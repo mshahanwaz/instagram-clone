@@ -167,34 +167,34 @@ function App() {
         </div>
       </Modal>
 
-      <div className="app__header">
-        <img
-          className="app__headerImage"
-          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-          alt="instagram"
-        />
-        {user ? (
-          <Button color="secondary" onClick={() => auth.signOut()}>
-            Sign Out
-          </Button>
-        ) : (
-          <div className="app__loginContainer">
-            <Button
-              className={classes.button}
-              color="primary"
-              onClick={() => setOpenSignIn(true)}
-            >
-              Sign In
+      <div className="app__container">
+        <div className="app__header">
+          <img
+            className="app__headerImage"
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+            alt="instagram"
+          />
+          {user ? (
+            <Button color="secondary" onClick={() => auth.signOut()}>
+              Sign Out
             </Button>
-            <Button color="primary" onClick={() => setOpen(true)}>
-              Sign Up
-            </Button>
-          </div>
-        )}
-      </div>
+          ) : (
+            <div className="app__loginContainer">
+              <Button
+                className={classes.button}
+                color="primary"
+                onClick={() => setOpenSignIn(true)}
+              >
+                Sign In
+              </Button>
+              <Button color="primary" onClick={() => setOpen(true)}>
+                Sign Up
+              </Button>
+            </div>
+          )}
+        </div>
 
-      <div className="app__posts">
-        <div className="app__postsLeft">
+        <div className="app__posts">
           {posts.map(({ id, post }) => (
             <Post
               key={id}
@@ -207,28 +207,15 @@ function App() {
             />
           ))}
         </div>
-        <div className="app__postsRight">
-          <InstagramEmbed
-            clientAccessToken="<appId>|<clientToken>"
-            url="https://instagr.am/p/HLLj2RgURT/"
-            maxWidth={375}
-            hideCaption={false}
-            containerTagName="div"
-            injectScript
-            protocol=""
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-          />
-        </div>
       </div>
-
-      {user?.displayName ? (
-        <ImageUpload username={user.displayName} />
-      ) : (
-        <h3>Sorry you need to login to upload</h3>
-      )}
+      <hr />
+      <div className="app__footer">
+        {user?.displayName ? (
+          <ImageUpload username={user.displayName} />
+        ) : (
+          <h3 align="center">⚠️ Sorry, you need to login to upload</h3>
+        )}
+      </div>
     </div>
   );
 }

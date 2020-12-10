@@ -1,12 +1,26 @@
 .imageUpload {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+  height: 100px;
+  width: 500px;
   margin: 10px auto;
-  /* position: fixed;
-  bottom: 0; */
 }
 
 .imageUpload__progress {
   width: 100%;
+  margin: 0 auto;
+}
+
+.imageUpload__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.imageUpload__input {
+  width: 100%;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
 }

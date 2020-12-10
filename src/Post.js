@@ -55,6 +55,11 @@ function Post({ postId, user, username, caption, imageUrl, date }) {
       </h4>
 
       <div className="post__comments">
+        <strong>
+          <u>Comments</u>
+        </strong>
+        <br />
+        <br />
         {comments.map((comment) => (
           <p>
             <b>{comment.username}</b> {comment.text}

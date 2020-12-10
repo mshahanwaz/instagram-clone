@@ -47,19 +47,13 @@
 .post__button {
   flex: 0.1;
   border: none;
+  background-color: white;
   border-left: 1px solid lightgray;
   border-top: 1px solid lightgray;
-}
-
-.post__button:hover {
-  background-color: black;
-  color: white;
-  transition: 0.25s;
+  transition: all 0.5s;
 }
 
 .post__button:disabled,
 button[disabled] {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  transition: 0.25s;
+  color: rgb(139, 139, 139);
 }
