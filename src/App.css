@@ -1,3 +1,45 @@
 * {
   margin: 0;
 }
+
+body {
+  background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+}
+
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  object-fit: contain;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__headerImage {
+  object-fit: contain;
+}
+
+.app__signup,
+.app__signin {
+  display: flex;
+  flex-direction: column;
+  max-height: 30vh;
+  justify-content: space-around;
+}
+
+.app__posts {
+  padding: 20px;
+  display: flex;
+}
+
+.app__postsRight {
+  margin-left: 20px;
+}
