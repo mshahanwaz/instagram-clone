@@ -47,9 +47,13 @@ body {
 }
 
 .app__footer {
-  background-color: white;
+  background: rgb(255, 255, 255);
 }
 
-.app__footer > h3 {
-  margin: 20px 0;
+.app__footer {
+  padding: 20px 0;
+}
+
+.app__line {
+  border-bottom: 1px solid lightgray;
 }

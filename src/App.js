@@ -1,25 +1,21 @@
-import { Button, emphasize, Input, makeStyles, Modal } from "@material-ui/core";
+import { Button, Input, makeStyles, Modal } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { auth, db } from "./firebase";
 import ImageUpload from "./ImageUpload";
 import Post from "./Post";
-import InstagramEmbed from "react-instagram-embed";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
-    padding: theme.spacing(1),
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
   paper: {
     position: "absolute",
-    width: 400,
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(4, 5, 4),
   },
 }));
 
@@ -208,10 +204,10 @@ function App() {
           ))}
         </div>
       </div>
-      <hr />
+      <div className="app__line"></div>
       <div className="app__footer">
         {user?.displayName ? (
-          <ImageUpload username={user.displayName} />
+          <ImageUpload className="app__upload" username={user.displayName} />
         ) : (
           <h3 align="center">⚠️ Sorry, you need to login to upload</h3>
         )}

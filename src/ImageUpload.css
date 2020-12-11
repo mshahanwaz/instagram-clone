@@ -1,7 +1,6 @@
 .imageUpload {
-  height: 100px;
   width: 500px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .imageUpload__progress {
@@ -17,7 +16,7 @@
 }
 
 .imageUpload__input {
-  width: 100%;
+  width: 99%;
 }
 
 textarea {
