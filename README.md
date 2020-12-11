@@ -10,12 +10,12 @@ Decent clone of Instagram having ability to signup or login with email & passwor
 ## Screenshots:
   <p align="center">
 	<kbd>
-		<img src="https://github.com/mshahanwaz/instagram-clone/tree/master/screenshots/1.png" width=600px style="border: 2px solid black;">
+		<img src="https://github.com/mshahanwaz/instagram-clone/blob/master/screenshots/1.png" width=600px style="border: 2px solid black;">
 	</kbd>
   </p>
   <hr/>
   <p align="center">
 	<kbd>
-		<img src="https://github.com/mshahanwaz/instagram-clone/tree/master/screenshots/2.png" width=600px style="border: 2px solid black;">
+		<img src="https://github.com/mshahanwaz/instagram-clone/blob/master/screenshots/2.png" width=600px style="border: 2px solid black;">
 	</kbd>
   </p>
