@@ -1,7 +1,7 @@
 # Instagram Clone
 Decent clone of Instagram having ability to signup or login with email & passwords to post any feed(images only with caption), comment on that post(when login).
 
-## Link : [here](https://www.instagram-clone.ga)
+## Link : [here](https://instagram-v0.web.app)
 
 ## Library & Packages:
 - ReactJS
